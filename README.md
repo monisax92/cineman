@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🎬 Cineman
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cineman is a simple movie browsing app that uses TheMovieDB API to display information about various movies. Users can search for movies and browse different categories like Popular, Top Rated, and Upcoming. The app features a modern responsive UI and includes a dark mode toggle for improved user experience.
 
-## Available Scripts
+🔗 Live: [https://cineman-mhs.netlify.app](https://cineman-mhs.netlify.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧩 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔍 Search for movies by title
+- 🏠 Browse categorized movie lists: Home, Popular, Top Rated, and Upcoming
+- 📝 View detailed info about a movie, including:
+  - Title and description
+  - Genres/categories
+  - Rating (0–10) and number of reviews
+  - Runtime
+  - Budget and revenue
+  - Release date (with relative format, e.g., "123 days ago")
+  - IMDB code (linked to IMDb)
+  - Movie poster
+- 🌗 Toggle between light and dark modes
+- 📱 Fully responsive design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ⚛️ React (via Create React App)
+- 🎨 Tailwind CSS for styling
+- 🔗 React Router for navigation
+- 🌑 Dark mode support
+- 🌐 TheMovieDB API for movie data
+- 🚀 Deployed on Netlify
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Installation (for development)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> You only need this section if you're cloning the project and running it locally.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com/your-username/cineman.git
+cd cineman
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Create a .env file and add your TMDB API key:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+REACT_APP_TMDB_API_KEY=your_api_key_here
+```
 
-## Learn More
+> You can get your API key from [TheMovieDB](https://developer.themoviedb.org/docs/authentication)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Start development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Deployment
 
-### Analyzing the Bundle Size
+The project is deployed on Netlify:  
+[https://cineman-mhs.netlify.app](https://cineman-mhs.netlify.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To deploy your own version:
 
-### Making a Progressive Web App
+- Push your project to GitHub
+- Link your GitHub repo to Netlify
+- Set your environment variable `REACT_APP_TMDB_API_KEY` in Netlify settings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 💡 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Short-Term Goals:
 
-### Deployment
+- ✅ Add a list of favorite movies (localStorage or backend)
+- ✅ Add a "Want to Watch" list
+- ✅ Add authentication (e.g., Firebase or custom backend)
+- ✅ Add ability to filter or sort results by rating, genre, release date
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Long-Term Plans:
 
-### `npm run build` fails to minify
+- ⏳ Infinite scroll or "Load more" pagination
+- 🗂️ User profiles with saved lists
+- 🔄 Sync user data across devices
+- 🧠 Personalized movie recommendations based on watched/favorites
+- 📆 Calendar view of upcoming releases
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 🙌 Acknowledgments
+
+- [TheMovieDB](https://www.themoviedb.org/) for providing the movie data API
